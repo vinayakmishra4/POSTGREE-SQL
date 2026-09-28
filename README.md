@@ -43,7 +43,7 @@ This repository documents my learning of **PostgreSQL**, a powerful open-source 
 - Working with `psql` and pgAdmin
 - Creating and managing databases and schemas
 
-### 2️⃣ Module 2: [Installation](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Installation-on-os)
+### 2️⃣ Module 2: Installation
 
 | Platform | Guide |
 | --- | --- |

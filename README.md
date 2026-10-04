@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Status-In%20Progress-F5A623?style=for-the-badge" alt="Status: In Progress" />
-  <img src="https://img.shields.io/badge/Modules-4%20Logged-28A745?style=for-the-badge" alt="Modules: 4 Logged" />
+  <img src="https://img.shields.io/badge/Modules-5%20Logged-28A745?style=for-the-badge" alt="Modules: 5 Logged" />
   <img src="https://img.shields.io/badge/Platforms-macOS%20%7C%20Windows-4C8EDA?style=for-the-badge" alt="Platforms: macOS and Windows" />
 </p>
 
@@ -43,6 +43,7 @@ This repository documents my learning of **PostgreSQL**, a powerful open-source 
 | 2️⃣ | [Installation (macOS & Windows)](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Installation-on-os) | ✅ |
 | 3️⃣ | [Configuring Login User](https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Configure-Login-User/Readme.md) | ✅ |
 | 4️⃣ | [Create Database](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Create-Database) | ✅ |
+| 5️⃣ | [Creating Tables](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Creating-Tables) | ✅ |
 
 <details open>
 <summary><b>1️⃣ Module 1 — <a href="https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Intro.md/Readme.md">Intro</a></b></summary>
@@ -94,7 +95,20 @@ This repository documents my learning of **PostgreSQL**, a powerful open-source 
 
 </details>
 
-**🧭 Up next:** Tables → Columns → Rows → Queries → Relationships
+<details open>
+<summary><b>5️⃣ Module 5 — <a href="https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Creating-Tables">Creating Tables</a></b></summary>
+<br>
+
+- Setting up a sample database with three related tables: `customers`, `products`, and `purchases`
+- Running provided SQL scripts in pgAdmin's Query Tool to create each table and load sample data
+- Defining a primary key for each table during creation
+- Adding foreign keys in the `purchases` table to link it back to `customers` and `products`
+- Refreshing and verifying new tables in pgAdmin after each script runs
+- Visualizing how the three tables relate to each other ahead of learning joins and queries
+
+</details>
+
+**🧭 Up next:** Insert Data → Retrieve Data → Update Data → Delete Data → Joins → Queries
 
 ---
 

@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Status-In%20Progress-F5A623?style=for-the-badge" alt="Status: In Progress" />
-  <img src="https://img.shields.io/badge/Modules-3%20Logged-28A745?style=for-the-badge" alt="Modules: 3 Logged" />
+  <img src="https://img.shields.io/badge/Modules-4%20Logged-28A745?style=for-the-badge" alt="Modules: 4 Logged" />
   <img src="https://img.shields.io/badge/Platforms-macOS%20%7C%20Windows-4C8EDA?style=for-the-badge" alt="Platforms: macOS and Windows" />
 </p>
 
@@ -42,6 +42,7 @@ This repository documents my learning of **PostgreSQL**, a powerful open-source 
 | 1️⃣ | [Intro](https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Intro.md/Readme.md) | ✅ |
 | 2️⃣ | [Installation (macOS & Windows)](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Installation-on-os) | ✅ |
 | 3️⃣ | [Configuring Login User](https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Configure-Login-User/Readme.md) | ✅ |
+| 4️⃣ | [Create Database](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Create-Database) | ✅ |
 
 <details open>
 <summary><b>1️⃣ Module 1 — <a href="https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Intro.md/Readme.md">Intro</a></b></summary>
@@ -79,7 +80,21 @@ This repository documents my learning of **PostgreSQL**, a powerful open-source 
 
 </details>
 
-**🧭 Up next:** Databases → Schemas → Tables → Data → Queries
+<details open>
+<summary><b>4️⃣ Module 4 — <a href="https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Create-Database">Create Database</a></b></summary>
+<br>
+
+- Creating a new database (e.g. `learning`) through pgAdmin's Databases panel
+- Setting the database owner to a specific role instead of the default `postgres` user
+- Choosing UTF-8 encoding to support multilingual text
+- Understanding connection limits, including what an unlimited setting means
+- Exploring the default `public` schema created automatically with a new database
+- Understanding what a schema is and how it organizes tables, views, and other objects
+- Recognizing the SQL equivalent (`CREATE DATABASE`) behind the actions performed in pgAdmin
+
+</details>
+
+**🧭 Up next:** Tables → Columns → Rows → Queries → Relationships
 
 ---
 

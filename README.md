@@ -99,10 +99,10 @@ This repository documents my learning of **PostgreSQL**, a powerful open-source 
 <summary><b>5️⃣ Module 5 — <a href="https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Creating-Tables">Creating Tables</a></b></summary>
 <br>
 
-- Setting up a sample database with three related tables: `customers`, `products`, and `purchases`
-- Running provided SQL scripts in pgAdmin's Query Tool to create each table and load sample data
+- Setting up a sample database with three related tables: `customers` (customer_id, first_name, last_name), `products` (product_id, product_name, unit_price), and `purchases` (purchase_id, product_id, customer_id)
+- Running the provided SQL scripts (`Customertable.sql`, `Prouctstable.sql`, `Purchasetable.sql`) in pgAdmin's Query Tool to create each table and load sample data
 - Defining a primary key for each table during creation
-- Adding foreign keys in the `purchases` table to link it back to `customers` and `products`
+- Adding foreign key constraints on `purchases` to link it back to `customers` and `products`
 - Refreshing and verifying new tables in pgAdmin after each script runs
 - Visualizing how the three tables relate to each other ahead of learning joins and queries
 

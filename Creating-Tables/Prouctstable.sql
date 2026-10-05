@@ -1,6 +1,7 @@
 -- ----------------------------
 --  Table : products
 -- ----------------------------
+
 DROP TABLE IF EXISTS "public"."products";
 CREATE TABLE "public"."products" (
 	"product_id" int4 NOT NULL,

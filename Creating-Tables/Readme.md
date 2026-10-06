@@ -225,4 +225,4 @@ In the upcoming lessons, we'll learn how to:
 - [ ] Refresh pgAdmin
 - [ ] Verify all three tables are visible
 
-🎉 **Your PostgreSQL sample database is now ready!**
+🎉 **Your PostgreSQL sample database is now ready!**x

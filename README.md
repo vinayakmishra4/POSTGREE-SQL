@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Status-In%20Progress-F5A623?style=for-the-badge" alt="Status: In Progress" />
-  <img src="https://img.shields.io/badge/Modules-5%20Logged-28A745?style=for-the-badge" alt="Modules: 5 Logged" />
+  <img src="https://img.shields.io/badge/Modules-6%20Logged-28A745?style=for-the-badge" alt="Modules: 6 Logged" />
   <img src="https://img.shields.io/badge/Platforms-macOS%20%7C%20Windows-4C8EDA?style=for-the-badge" alt="Platforms: macOS and Windows" />
 </p>
 
@@ -37,13 +37,14 @@ This repository documents my learning of **PostgreSQL**, a powerful open-source 
 
 ## 📚 Topics Covered
 
-| # | Module | Status |
-| :-: | --- | :-: |
-| 1️⃣ | [Intro](https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Intro.md/Readme.md) | ✅ |
-| 2️⃣ | [Installation (macOS & Windows)](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Installation-on-os) | ✅ |
-| 3️⃣ | [Configuring Login User](https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Configure-Login-User/Readme.md) | ✅ |
-| 4️⃣ | [Create Database](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Create-Database) | ✅ |
-| 5️⃣ | [Creating Tables](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Creating-Tables) | ✅ |
+| # | Module | You learn | Status |
+| :-: | --- | --- | :-: |
+| 1️⃣ | [Intro](https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Intro.md/Readme.md) | RDBMS basics and the tools | ✅ |
+| 2️⃣ | [Installation (macOS & Windows)](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Installation-on-os) | Setting up PostgreSQL on your OS | ✅ |
+| 3️⃣ | [Configuring Login User](https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Configure-Login-User/Readme.md) | Roles, logins, and privileges | ✅ |
+| 4️⃣ | [Create Database](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Create-Database) | Owners, encoding, and schemas | ✅ |
+| 5️⃣ | [Creating Tables](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Creating-Tables) | Primary and foreign keys | ✅ |
+| 6️⃣ | [Creating & Modifying Tables](https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Create-and-Modifiying) | Building and changing a Movies database | ✅ |
 
 <details open>
 <summary><b>1️⃣ Module 1 — <a href="https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Intro.md/Readme.md">Intro</a></b></summary>
@@ -105,6 +106,48 @@ This repository documents my learning of **PostgreSQL**, a powerful open-source 
 - Adding foreign key constraints on `purchases` to link it back to `customers` and `products`
 - Refreshing and verifying new tables in pgAdmin after each script runs
 - Visualizing how the three tables relate to each other ahead of learning joins and queries
+
+</details>
+
+<details open>
+<summary><b>6️⃣ Module 6 — <a href="https://github.com/vinayakmishra4/POSTGREE-SQL/tree/main/Create-and-Modifiying">Creating &amp; Modifying Tables</a></b></summary>
+<br>
+
+- Exploring a Movies database built from four tables: `directors`, `actors`, `movies`, and `movies_revenues`
+- Creating tables with auto-incrementing `SERIAL` primary keys and fitting data types (text, dates, integers, decimals)
+- Applying `NOT NULL` constraints to keep essential fields filled in
+- Linking tables with foreign keys: each movie points to its director, and each revenue record points to its movie
+- Modifying existing tables: adding, changing, renaming, and dropping columns, renaming tables, and managing constraints
+- Checking dependencies and backing up data before any destructive change
+- Loading sample records for directors, actors, and revenues from the module's SQL script
+
+```mermaid
+erDiagram
+    DIRECTORS ||--o{ MOVIES : directs
+    MOVIES ||--o{ MOVIES_REVENUES : earns
+    DIRECTORS {
+        int director_id PK
+        varchar last_name
+        varchar nationality
+    }
+    ACTORS {
+        int actor_id PK
+        varchar last_name
+        char gender
+    }
+    MOVIES {
+        int movie_id PK
+        varchar movie_name
+        int director_id FK
+    }
+    MOVIES_REVENUES {
+        int revenue_id PK
+        int movie_id FK
+        numeric revenues_domestic
+    }
+```
+
+📄 **Script:** [`movie_database.sql`](https://github.com/vinayakmishra4/POSTGREE-SQL/blob/main/Create-and-Modifiying/movie_database.sql)
 
 </details>
 
